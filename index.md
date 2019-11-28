@@ -1,5 +1,14 @@
 ---
-# Must begin with --- for convert to html
+layout: default
+title: "开发日志"
 ---
-## QT量化交易开发日志
+## {{ page.title }}
 
+<ul>
+  {% for post in site.posts %}
+    <li>
+      <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+      <p>{{ post.excerpt }}</p>
+    </li>
+  {% endfor %}
+</ul>
