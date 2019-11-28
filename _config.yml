@@ -1,6 +1,6 @@
-title: "量化交易"
+title: "QT量化交易"
 github:
-  repository_url: "/"
+  repository_url: "/devlog/"
 theme: jekyll-theme-modernist
 exclude:
   - README.md
@@ -13,3 +13,6 @@ defaults:
       type: "posts"
     values:
       layout: "post"
+baseurl: "/devlog"
+collections:
+  - reports
