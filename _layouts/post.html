@@ -8,8 +8,10 @@ layout: default
 
 {% if page.report_name %}
 <h3> 测试报告 </h3>
-<a href="{{ site.baseurl}}/reports/{{page.symbol}}/{{page.report_name}}.htm" target="blank">
-<img src="{{ site.baseurl}}/reports/{{page.symbol}}/{{page.report_name}}.gif">
-{{page.symbol}}_{{page.report_name}}  查看详情
+{% for item in page.symbol %}
+<a href="{{ site.baseurl}}/reports/{{item}}/{{page.report_name}}.htm" target="blank">
+{{item|capitalize}}_{{page.report_name}}  点击下图查看详情
+<img src="{{ site.baseurl}}/reports/{{item}}/{{page.report_name}}.gif">
 </a>
+{% endfor %}
 {% endif %}
