@@ -6,7 +6,7 @@ symbol:
   - "nas100"
 report_name: "20191223"
 ---
-在TradeMax对AUDUSDJPY进行首次优化，以及NAS100面向赢率再优化。
+在TradeMax对AUDUSD进行首次优化，以及NAS100面向赢率再优化。
 
 ### RESULT  
 
