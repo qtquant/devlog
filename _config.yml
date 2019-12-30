@@ -14,5 +14,3 @@ defaults:
     values:
       layout: "post"
 baseurl: "/devlog"
-collections:
-  - reports
