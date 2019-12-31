@@ -4,7 +4,7 @@ title: "全部报告"
 ---
 ## {{ page.title }}
 
-{% assign symbols = site.static_files | where_exp: "file", "file.path contains '/reports/'" | where: "extname", ".htm" | group_by_exp: "item", "item.path | slice: 9, 6" %}
+{% assign symbols = site.static_files | where_exp: "file", "file.path contains '/reports/'" | where: "extname", ".htm"| sort: "basename" | reverse | group_by_exp: "item", "item.path | slice: 9, 6" %}
 {% for symbol in symbols %}
 ### [{{ symbol.name | upcase }} - {{symbol.items[0].basename}}]({{symbol.items[0].path | relative_url }}){:target="_blank"} 
 
