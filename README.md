@@ -6,6 +6,12 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
 
 ### QuickStart
 
+### Prepare
+
+```sh
+$ bundle install
+```
+
 #### Preview
 ```
 # github pages api url maybe block, so proxy 
