@@ -9,7 +9,7 @@ layout: default
 {% if page.report_name %}
 {% comment %} {% assign filename = page.report_name | append: '.htm'%} {% endcomment %}
 {% assign exp_str =  "item.basename contains " | append: page.report_name %}
-{% assign reports = site.static_files| where_exp: "item", exp_str %}
+{% assign reports = site.static_files| where_exp: "item", exp_str | where: "extname", ".htm" %}
 <h3> 测试报告 </h3>
 {% for report in reports %}
 <a href="{{ report.path | relative_url }}" target="blank">
