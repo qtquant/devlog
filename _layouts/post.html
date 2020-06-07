@@ -7,13 +7,14 @@ layout: default
 {{ content }}
 
 {% if page.report_name %}
-{% assign filename = page.report_name | append: '.htm'%}
-{% assign reports = site.static_files| where: "name", filename %}
+{% comment %} {% assign filename = page.report_name | append: '.htm'%} {% endcomment %}
+{% assign exp_str =  "item.basename contains " | append: page.report_name %}
+{% assign reports = site.static_files| where_exp: "item", exp_str %}
 <h3> 测试报告 </h3>
 {% for report in reports %}
 <a href="{{ report.path | relative_url }}" target="blank">
-{{report.path|slice: 9,15|upcase}}  点击下图查看详情
+{{report.path|slice: 9,21|split: '.'| first |upcase}}  点击下图查看详情
 <img src={{ report.path | replace: "htm", "gif" | relative_url}}>
-</a>
+</a> 
 {% endfor %}
 {% endif %}
