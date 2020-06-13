@@ -13,7 +13,7 @@ layout: default
 <h3> 测试报告 </h3>
 {% for report in reports %}
 <a href="{{ report.path | relative_url }}" target="blank">
-{{report.path|slice: 9,21|split: '.'| first |upcase}}  点击下图查看详情
+{{report.path|slice: 9,30|split: '.'| first |upcase}}  点击下图查看详情
 <img src={{ report.path | replace: "htm", "gif" | relative_url}}>
 </a> 
 {% endfor %}
