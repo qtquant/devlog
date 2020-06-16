@@ -20,15 +20,17 @@ report_name: "20200613"
 
 ### FXDD趋势图
 #### 20200613_m30
-![20200613_m30]({{site.url}}{{site.baseurl}}/assets/images/20200613_m30.png)
+[1]: {{site.url}}{{site.baseurl}}/assets/images/20200613_m30.png
+[![20200613_m30][1]][1]{:target="_blank"}
 
 **GBPUSD**的本周劣化比较明显需要再优化，**AUDUSD/NZDUSD/USDJPY/USDCAD**虽然总体震荡上行考虑震荡策略的改进需要全部优化，EURUSD/USDCHF上线一周还有待观察。
 
 
 #### 20200613_h1
-![20200613_h1]({{site.url}}{{site.baseurl}}/assets/images/20200613_h1.png)
+[2]: {{site.url}}{{site.baseurl}}/assets/images/20200613_h1.png
+[![20200613_h1][2]][2]{:target="_blank"}
 
-EURUSD/USDCHF/USDJPY有待继续观察，**AUDUSD**从震荡策略优化的角度考虑需要更新，其他GBPUSD/USDCAD/NZDUSD都亟需改进。特别是USDCAD已经持续进行劣化。此外H1的开仓比较少需要通过震荡策略优化提升交易数量。
+EURUSD/USDCHF/USDJPY有待继续观察，**AUDUSD**从震荡策略优化的角度考虑需要更新，其他**GBPUSD/USDCAD/NZDUSD**都亟需改进。特别是USDCAD已经持续进行劣化。此外H1的开仓比较少需要通过震荡策略优化提升交易数量。
 
 ### WIP
 
