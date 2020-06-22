@@ -9,6 +9,7 @@ tags:
   - "NZDUSD"
   - "AUDUSD"
   - "USDJPY"
+report_name: "20200621"
 ---
 
 由交易记录观察发现，获利记录达到阙值后回撤50%并没有获利了结。
